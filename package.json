@@ -1,0 +1,30 @@
+{
+    "name": "agl-js-api",
+    "version": "0.0.0",
+    "description": "AGL api connector to be used with html5 technologies",
+    "scripts": {
+        "webpack": "webpack",
+        "build": "webpack",
+        "start": "webpack-dev-server"
+    },
+    "main": "AGLJS.js",
+    "homepage": "https://bitbucket.org/smarsol/agl-js-api",
+    "author": "humberto.alfonso@asvito.es",
+    "repository": {
+        "type": "git",
+        "url": "git@bitbucket.org:smarsol/agl-js-api.git"
+    },
+    "keywords": [
+        "agl",
+        "automotive",
+        "automotivegradelinux"
+    ],
+    "devDependencies": {
+        "clean-webpack-plugin": "^1.0.1",
+        "uglifyjs-webpack-plugin": "^2.1.1",
+        "copy-webpack-plugin": "^4.6.0",
+        "webpack": "^4.29.5",
+        "webpack-cli": "^3.2.3",
+        "webpack-dev-server": "^3.7.2"
+    }
+}
