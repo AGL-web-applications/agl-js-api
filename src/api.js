@@ -25,9 +25,7 @@ export function call(url, params) {
 export function subscribe(url, event, handler) {
     return new Promise(function(resolve, reject) {
         var ws = new afb.ws(function() {
-            ws.call(url, {
-                event: event
-            }).then(
+            ws.call(url, event).then(
                 function(obj) {
                     var eventId = url.split("/")[0]+"/"+event;
                     ws.onevent(eventId, function(event) {
@@ -48,7 +46,7 @@ export function subscribe(url, event, handler) {
 
 export function init() {
     afb = new AFB({
-        // host: "192.168.1.102:31022",
+        // host: "192.168.1.102:31030",
         host: host+":"+port,
         token: token
     });

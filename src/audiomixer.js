@@ -12,9 +12,13 @@ export function set_volume(control, value) {
 }
 
 export function on_volume_changed(handler) {
-    return api_subscribe("audiomixer/subscribe", "volume_changed", handler);
+    return api_subscribe("audiomixer/subscribe", {
+        event: "volume_changed"
+    }, handler);
 }
 
 export function on_controls_changed(handler) {
-    return api_subscribe("audiomixer/subscribe", "controls_changed", handler);
+    return api_subscribe("audiomixer/subscribe", {
+        event: "controls_changed"
+    }, handler);
 }
