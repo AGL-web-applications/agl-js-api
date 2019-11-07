@@ -4,6 +4,7 @@ import * as afmMain from './afm-main';
 import * as weather from './weather';
 import * as bluetooth from './bluetooth';
 import * as network from './network';
+import * as homescreen from './homescreen';
 import * as api from './api';
 
 api.init();
@@ -14,5 +15,6 @@ export {
     weather,
     bluetooth,
     network,
+    homescreen,
     api
 }

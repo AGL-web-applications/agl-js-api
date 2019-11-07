@@ -6,13 +6,6 @@ export function runnables() {
 
 export function start(appId) {
     return api_call("afm-main/start", {
-                id: appId
-            }).then(function(result) {
-                return api_call("homescreen/showWindow", {
-                    application_id: appId.split('@')[0], 
-                    parameter: {
-                        area: "normal.full"
-                    }
-                });
-            });
+        id: appId
+    });
 }
