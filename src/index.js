@@ -5,6 +5,7 @@ import * as weather from './weather';
 import * as bluetooth from './bluetooth';
 import * as network from './network';
 import * as homescreen from './homescreen';
+import * as lowcan from './low-can';
 import * as api from './api';
 
 api.init();
@@ -16,5 +17,6 @@ export {
     bluetooth,
     network,
     homescreen,
+    lowcan,
     api
 }
