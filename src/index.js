@@ -6,6 +6,7 @@ import * as bluetooth from './bluetooth';
 import * as network from './network';
 import * as homescreen from './homescreen';
 import * as lowcan from './low-can';
+import * as mediaplayer from './mediaplayer';
 import * as api from './api';
 
 api.init();
@@ -18,5 +19,6 @@ export {
     network,
     homescreen,
     lowcan,
+    mediaplayer,
     api
 }
