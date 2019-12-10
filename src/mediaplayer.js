@@ -17,6 +17,13 @@ export function loop(loopState) {
     });
 }
 
+export function seek(position) {
+    return api_call("mediaplayer/controls", {
+            value: "seek",
+            position: position
+    });
+}
+
 export function play() {
     return api_call("mediaplayer/controls", {
         value: 'play'
