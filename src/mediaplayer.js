@@ -11,6 +11,12 @@ export function pickTrack(trackIndex) {
     });
 }
 
+export function loop(loopState) {
+    return api_call("mediaplayer/controls", {
+            value: "loop"
+    });
+}
+
 export function play() {
     return api_call("mediaplayer/controls", {
         value: 'play'
