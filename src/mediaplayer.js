@@ -4,6 +4,13 @@ export function playlist() {
     return api_call("mediaplayer/playlist", {});
 }
 
+export function pickTrack(trackIndex) {
+    return api_call("mediaplayer/controls", {
+            value: "pick-track", 
+            index: trackIndex
+    });
+}
+
 export function play() {
     return api_call("mediaplayer/controls", {
         value: 'play'
