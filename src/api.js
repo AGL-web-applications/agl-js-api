@@ -46,8 +46,8 @@ export function subscribe(url, event, handler) {
 
 export function init() {
     afb = new AFB({
-        host: "192.168.1.102:31031",
-        // host: host+":"+port,
+        // host: "192.168.1.102:31031",
+        host: host+":"+port,
         token: token
     });
 }
